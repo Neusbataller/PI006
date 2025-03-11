@@ -10,17 +10,15 @@ router.get("/rutaGet", (req, res) => {
 router.post("/rutaPOST", (req, res) => {
   console.log("Enviada una peticion POST");
   console.log(req.body);
-  console.log(req.body.nombre);
-  console.log(req.body.apellido1);
-  console.log(req.body.apellido2);
-  console.log(req.body.edad);
-  console.log(req.body.correo);
-  console.log(req.body.telf);
 
   res.json({
     id: "cliente_01",
     nombre: req.body.nombre,
-    apellido: req.body.apellido,
+    apellido1: req.body.apellido1,
+    apellido2: req.body.apellido2,
+    edad: req.body.edad,
+    correo: req.body.correo,
+    telefono: req.body.telf,
   });
 
   // res.send("Gracias por rellenar el formulario :) ");
