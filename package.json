@@ -1,7 +1,6 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "Ejercicios de clase de DAM",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/index.js",
@@ -10,11 +9,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "description": "",
   "dependencies": {
-    "express": "^4.21.2"
-  },
-  "devDependencies": {
-    "morgan": "^1.10.0",
-    "nodemon": "^3.1.7"
+    "express": "^4.21.2",
+    "morgan": "^1.10.0"
   }
 }
