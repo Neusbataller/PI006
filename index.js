@@ -6,9 +6,9 @@ const morgan = require("morgan");
 app.set("port", process.env.PORT || 8080);
 
 //Middleware
-app.use(morgan("dev"));
+app.use(express.json());
+// app.use(morgan("dev"));
 app.use(express.urlencoded({ extended: false }));
-// app.use(express.json());
 
 //Rutas
 app.use(require("./routes/index"));
